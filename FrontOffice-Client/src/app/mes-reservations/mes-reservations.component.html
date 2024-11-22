@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from www.themeenergy.com/themes/html/book-your-travel/hotels.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 17 Aug 2023 11:54:27 GMT -->
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="Book Your Travel - Online Booking HTML Template">
+	<meta name="description" content="Book Your Travel - Online Booking HTML Template">
+	<meta name="author" content="themeenergy.com">
+	
+	<title>Book Your Travel - Hotels</title>
+	
+</head>
+<body>
+	<!--header-->
+<app-menu></app-menu>
+	<!--//header-->
+	<!--main-->
+	<main class="main">		
+		<div class="wrap">
+			<div class="row">
+		
+				<div class="full-width">
+					
+					<!--//deals-->
+					
+					<header class="s-title">
+						<h2>Mes réservations</h2>
+					</header>
+					
+					<!--top destinations-->
+					<div class="destinations">
+						<div class="row">
+                            <table class="table">
+                                <thead>
+                                  <tr>
+                                    <th scope="col">Id</th>
+                                    <th scope="col">Client</th>
+                                    <th scope="col">Offre</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr *ngFor="let reservation of listReservation">
+                                    <th scope="row">{{reservation.id}}</th>
+                                    <td>{{reservation?.client?.nom}}</td>
+                                    <td>{{reservation?.offre?.nom}}</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+						</div>
+					</div>
+					<!--//top destinations-->
+				</div>
+			</div>
+		</div>
+	</main>
+	<!--//main-->
+	<!--footer-->
+	<footer class="footer">
+		<div class="wrap">
+			<div class="row">
+				<!--column-->
+				<article class="one-fourth">
+					<h6>Les Rêves D'Hôtes</h6>
+					<p>Ras Jebel Bizerte Tunisie</p>
+					<p><em>P:</em>  ** *** ***</p>
+					<p><em>E:</em> <a href="#" title="booking@mail.com">********@gmail.com</a></p>
+				</article>
+				<!--//column-->
+				
+				<!--column-->
+				<article class="one-fourth">
+					<h6>Service client</h6>
+					<ul>
+						<li><a href="#" title="Faq">Faq</a></li>
+						<li><a href="#" title="How do I make a reservation?">Comment faire une réservation ?</a></li>
+						<li><a href="#" title="Payment options">Options de paiement</a></li>
+						<li><a href="#" title="Booking tips">Conseils de réservation</a></li>
+					</ul>
+				</article>
+				<!--//column-->
+				
+				<!--column-->
+				<article class="one-fourth">
+					<h6>Suivez-nous</h6>
+                    <div class="social-links">
+                        <span>
+                            <a href="https://www.facebook.com/votrepage" target="_blank" class="social-link">
+                                <img src="assets/images/uploads/facebook-logo.png" alt="Facebook" class="social-icon" style="vertical-align: middle;">
+                            </a>
+                        </span>
+                        <span>
+                            <a href="https://www.instagram.com/votrepage" target="_blank" class="social-link">
+                                <img src="assets/images/uploads/instagram-logo.png" alt="Instagram" class="social-icon" style="vertical-align: middle;">
+                            </a>
+                        </span>
+                        <span>
+                            <a href="https://twitter.com/votrecompte" target="_blank" class="social-link">
+                                <img src="assets/images/uploads/twitter-logo.png" alt="Twitter" class="social-icon" style="vertical-align: middle;">
+                            </a>
+                        </span>
+                    </div>
+				</article>
+				<!--//column-->
+				<!--column-->
+				<article class="one-fourth">
+					<h6>Pour nos offres exclusives</h6>
+					<form id="newsletter" action="http://www.themeenergy.com/themes/html/book-your-travel/newsletter.php" method="post">
+						<fieldset>
+							<input type="email" id="newsletter_signup" name="newsletter_signup" placeholder="Entrer votre email ici" />
+							<input type="submit" id="newsletter_submit" name="newsletter_submit" value="S'inscrire" class="gradient-button" />
+						</fieldset>
+					</form>
+				</article>
+				<!--//column-->
+				
+				<div class="bottom full-width">
+					<p class="copy">Copyright 2023. Les Rêves D'Hôtes X Mohamed Wassim Ennar .All rights reserved</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!---footer-->
+	<!-- TEMPLATE STYLES -->
+</body>
+
+<!-- Mirrored from www.themeenergy.com/themes/html/book-your-travel/hotels.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 17 Aug 2023 11:55:17 GMT -->
+</html>
+

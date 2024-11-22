@@ -1,0 +1,42 @@
+<header class="header">
+    <div class="wrap">
+        <!--logo-->
+        <div class="logo"><a href="" title="Les Rêves D'Hôtes"><img src="assets/images/txt/logo2.png" alt="Book Your Travel" /></a></div>
+        <!--//logo-->
+        
+        <!--ribbon-->
+        <div class="ribbon">
+            <nav>
+                <ul class="profile-nav">
+                  <li class="active"><a *ngIf="!IsLoggedIn" href="registre" title="Inscription">Inscription</a></li>
+                    <li><a *ngIf="!IsLoggedIn" href="login" title="Login">Login</a></li>
+                    <li ><a style="position: fixed;" *ngIf="IsLoggedIn" (click)="logout()" title="Déconnexion">Déconnexion</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!--//ribbon-->
+        
+        <!--search-->
+        <div class="search">
+            <form id="search-form" method="get" action="http://www.themeenergy.com/themes/html/book-your-travel/search-form">
+                <input type="search" placeholder="Rechercher" name="site_search" id="site_search" /> 
+                <input type="submit" id="submit-site-search" value="submit-site-search" name="submit-site-search"/>
+            </form>
+        </div>
+        <!--//search-->
+    </div>
+    
+    <!--main navigation-->
+    <nav class="main-nav">
+        <div class="wrap">
+            <ul class="slimmenu" id="nav">
+                <li><a href="" title="Acceuil" >Acceuil</a></li>
+                <li><a href="about" title="A propos">A propos</a></li>
+                <li><a href="offre" title="Offres" >Offres</a></li>
+                <li><a href="contact" title="Contact">Contact</a></li>
+                <li><a *ngIf="IsLoggedIn" href="mes-reservations" title="mes-reservations" style="color: black;">Mes réservations</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!--//main navigation-->
+</header>

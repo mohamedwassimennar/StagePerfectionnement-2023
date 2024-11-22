@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from www.themeenergy.com/themes/html/book-your-travel/contact.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 17 Aug 2023 11:58:19 GMT -->
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="Book Your Travel - Online Booking HTML Template">
+	<meta name="description" content="Book Your Travel - Online Booking HTML Template">
+	<meta name="author" content="themeenergy.com">
+	
+	<title>Book Your Travel - Contact</title>
+	
+	
+	
+	 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body onload="initialize()">
+	<!--- loading animation -->
+	
+	<!--- //loading animation -->
+
+	<!--header-->
+	<app-menu></app-menu>
+	<!--//header-->
+	
+	<!--main-->
+	<main class="main">		
+		<div class="wrap">
+			<div class="row">
+				<!--three-fourth content-->
+				<div class="three-fourth">
+					<h1>Contactez-nous</h1>
+					<!--map-->
+					<div class="map-wrap">
+						
+                            <img src="assets/images/uploads/slider2222.jpg"/>
+                      
+					</div>
+					<!--//map-->
+				</div>	
+				<!--three-fourth content-->
+				
+				<!--sidebar-->
+				<aside class="one-fourth right-sidebar lower">
+					<!--contact form-->
+					<article class="widget">
+						<h4>Envoyer un message</h4>
+						<form (ngSubmit)="addNewContact()" [formGroup]="loginForm">
+							<fieldset>
+								<div id="message"></div>
+								<div class="row">
+									<div class="form-group"  class="f-item full-width">
+										<label for="name">Nom & prénom</label>
+										<input formControlName="nomprenom" type="text" id="name" name="name" value="" />
+									</div>
+									<div class="form-group" class="f-item full-width">
+										<label for="email">E-mail</label>
+										<input formControlName="email" type="email" id="email" name="email" value="" />
+									</div>
+									<div  class="form-group" class="f-item full-width">
+										<label for="email">Telephone</label>
+										<input formControlName="telephone" type="text" id="email" name="email" value="" />
+									</div>
+									<div class="form-group" class="f-item full-width">
+										<label for="email">Sujet</label>
+										<input formControlName="sujet" type="text" id="email" name="email" value="" />
+									</div>
+									<div class="form-group" class="f-item full-width">
+										<label for="comments">Message</label>
+										<textarea formControlName="message" id="comments" rows="10" cols="10"></textarea>
+									</div>
+									<div class="f-item full-width">
+										<input type="submit" value="Envoyer" id="submit" name="submit" class="gradient-button" />
+									</div>
+								</div>
+							</fieldset>
+						</form>
+					</article>
+					<!--//contact form-->
+					
+					<!--contact info-->
+					<article class="widget">
+						<h4>Contacter nous</h4>
+						<p class="number">99999999</p>
+						<p class="email"><a href="#">Contact@mail.com</a></p>
+					</article>
+					<!--//contact info-->
+				</aside>
+				<!--//sidebar-->
+			</div>
+			<!--//main content-->
+		</div>
+	</main>
+	<!--//main-->
+	
+	<!--footer-->
+	<footer class="footer">
+		<div class="wrap">
+			<div class="row">
+				<!--column-->
+				<article class="one-fourth">
+					<h6>Les Rêves D'Hôtes</h6>
+					<p>Ras Jebel Bizerte Tunisie</p>
+					<p><em>P:</em>  ** *** ***</p>
+					<p><em>E:</em> <a href="#" title="booking@mail.com">********@gmail.com</a></p>
+				</article>
+				<!--//column-->
+				
+				<!--column-->
+				<article class="one-fourth">
+					<h6>Service client</h6>
+					<ul>
+						<li><a href="#" title="Faq">Faq</a></li>
+						<li><a href="#" title="How do I make a reservation?">Comment faire une réservation ?</a></li>
+						<li><a href="#" title="Payment options">Options de paiement</a></li>
+						<li><a href="#" title="Booking tips">Conseils de réservation</a></li>
+					</ul>
+				</article>
+				<!--//column-->
+				
+				<!--column-->
+				<article class="one-fourth">
+					<h6>Suivez-nous</h6>
+                    <div class="social-links">
+                        <span>
+                            <a href="https://www.facebook.com/votrepage" target="_blank" class="social-link">
+                                <img src="assets/images/uploads/facebook-logo.png" alt="Facebook" class="social-icon" style="vertical-align: middle;">
+                            </a>
+                        </span>
+                        <span>
+                            <a href="https://www.instagram.com/votrepage" target="_blank" class="social-link">
+                                <img src="assets/images/uploads/instagram-logo.png" alt="Instagram" class="social-icon" style="vertical-align: middle;">
+                            </a>
+                        </span>
+                        <span>
+                            <a href="https://twitter.com/votrecompte" target="_blank" class="social-link">
+                                <img src="assets/images/uploads/twitter-logo.png" alt="Twitter" class="social-icon" style="vertical-align: middle;">
+                            </a>
+                        </span>
+                    </div>
+				</article>
+				<!--//column-->
+				<!--column-->
+				<article class="one-fourth">
+					<h6>Pour nos offres exclusives</h6>
+					<form id="newsletter" action="http://www.themeenergy.com/themes/html/book-your-travel/newsletter.php" method="post">
+						<fieldset>
+							<input type="email" id="newsletter_signup" name="newsletter_signup" placeholder="Entrer votre email ici" />
+							<input type="submit" id="newsletter_submit" name="newsletter_submit" value="S'inscrire" class="gradient-button" />
+						</fieldset>
+					</form>
+				</article>
+				<!--//column-->
+				
+				<div class="bottom full-width">
+					<p class="copy">Copyright 2023. Les Rêves D'Hôtes X Mohamed Wassim Ennar .All rights reserved</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!---footer-->
+</body>
+
+<!-- Mirrored from www.themeenergy.com/themes/html/book-your-travel/contact.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 17 Aug 2023 11:58:19 GMT -->
+</html>
